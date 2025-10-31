@@ -1,97 +1,103 @@
-# CodeAlpha_FAQ_Chatbot
-
-# FAQ Chatbot - CodeAlpha AI Internship
+# CodeAlpha AI Internship - Tasks 2 & 3
 
 ## Project Overview
-An intelligent FAQ chatbot built using Natural Language Processing (NLP) techniques. The chatbot uses cosine similarity to match user questions with the most relevant FAQ answers.
+This project implements two AI tasks for the CodeAlpha internship program:
+- **Task 2**: FAQ Chatbot with NLP-based question matching
+- **Task 3**: AI Music Generator with pattern-based composition
 
 ## Features
-- 🤖 Interactive chat interface
-- 🧠 NLP-based question matching using cosine similarity
-- 📊 Confidence score display
-- 💬 10+ pre-loaded FAQs about tech support
-- 📋 Copy-to-clipboard functionality
-- 🔄 Reset conversation option
-- 💡 Suggested questions for easy start
+
+### Task 2: FAQ Chatbot
+- Natural Language Processing for question understanding
+- Cosine similarity-based intent matching
+- 10+ comprehensive FAQs about CodeAlpha internship
+- Real-time chat interface with typing indicators
+- Preprocessed text tokenization and keyword extraction
+
+### Task 3: Music Generation
+- AI-driven music sequence generation
+- Multiple music styles (Classical, Jazz)
+- Adjustable sequence length (20-100 notes)
+- Real-time audio playback using Web Audio API
+- Export functionality for generated sequences
+- Visual note preview
 
 ## Technologies Used
-- **React** - Frontend framework
-- **Lucide React** - Icons
-- **Tailwind CSS** - Styling
-- **NLP Techniques**:
-  - Tokenization
-  - Stop word removal
-  - TF vectorization
-  - Cosine similarity matching
+- React.js (Frontend framework)
+- Lucide React (Icons)
+- Web Audio API (Music playback)
+- NLP techniques (Text preprocessing, cosine similarity)
+- Tailwind CSS (Styling)
 
-## How It Works
+## Installation
 
-1. **Text Preprocessing**: User input is tokenized and cleaned
-2. **Stop Word Removal**: Common words are filtered out
-3. **Vectorization**: Text is converted to numerical vectors
-4. **Similarity Matching**: Cosine similarity calculates the best match
-5. **Response**: The most relevant FAQ answer is displayed
-
-## Installation & Setup
+1. Clone the repository:
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/CodeAlpha_FAQ_Chatbot.git
-cd CodeAlpha_FAQ_Chatbot
+git clone https://github.com/yourusername/CodeAlpha_ChatbotFAQs_MusicGeneration.git
+cd CodeAlpha_ChatbotFAQs_MusicGeneration
+```
 
-# Install dependencies
-npm install react lucide-react
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Run the application
+3. Start the development server:
+```bash
 npm start
 ```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
 ## Usage
-1. Type your question in the input field
-2. Press Enter or click Send
-3. The bot will respond with the most relevant answer
-4. Confidence score shows matching accuracy
-5. Use suggested questions to get started
 
-## NLP Implementation
+### FAQ Chatbot
+1. Click on the "FAQ Chatbot" tab
+2. Type your question in the input field
+3. Press Enter or click Send
+4. The bot will respond with the most relevant answer
 
-### Tokenization
-```javascript
-const tokenize = (text) => {
-  return text.toLowerCase()
-    .replace(/[^\w\s]/g, ' ')
-    .split(/\s+/)
-    .filter(word => word.length > 2);
-};
-```
+### Music Generator
+1. Click on the "Music Generator" tab
+2. Select a music style (Classical or Jazz)
+3. Adjust the sequence length using the slider
+4. Click "Generate Music Sequence"
+5. Click "Play Music" to hear the generated composition
+6. Click "Download Sequence" to save the data
 
-### Cosine Similarity Formula
-```
-similarity = (A · B) / (||A|| * ||B||)
-```
+## Technical Implementation
 
-## Project Structure
-```
-CodeAlpha_FAQ_Chatbot/
-│
-├── src/
-│   ├── App.jsx          # Main chatbot component
-│   └── index.js         # Entry point
-│
-├── README.md            # Project documentation
-├── package.json         # Dependencies
-└── demo.png            # Screenshot
-```
+### NLP Processing (Chatbot)
+- Text preprocessing: Lowercasing, punctuation removal, tokenization
+- Keyword extraction from user queries
+- Cosine similarity calculation for intent matching
+- Threshold-based response selection
+
+### Music Generation Algorithm
+- Pattern-based note selection from predefined scales
+- Randomized duration assignment (quarter, half, whole notes)
+- Frequency mapping using standard musical notation
+- Web Audio API synthesis with sine waves
+- Envelope shaping for natural sound
+
+## Project Structure Details
+
+- `src/App.js` - Main React component with both tasks
+- `src/index.js` - React DOM rendering
+- `src/index.css` - Global styles and Tailwind imports
+- `public/index.html` - HTML template
 
 
-
-## Future Enhancements
-- Add more FAQ categories
-- Implement machine learning model training
-- Add voice input/output
-- Multi-language support
-- Database integration
 
 ## Author
-**Nabiha Tasnim Orchi**
-CodeAlpha AI Internship - Task 2
+Nabiha Tasnim Orchi 
+CodeAlpha AI Internship  
 
+
+## License
+This project is created for educational purposes as part of the CodeAlpha internship program.
+
+## Contact
+- **CodeAlpha Website**: www.codealpha.tech
+- **Email**: services@codealpha.tech
+- **WhatsApp**: +91 8052293611── App.js

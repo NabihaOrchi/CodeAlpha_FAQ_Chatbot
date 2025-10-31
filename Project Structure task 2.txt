@@ -1,0 +1,10 @@
+CodeAlpha_ChatbotFAQs_MusicGeneration/
+├── README.md
+├── package.json
+├── .gitignore
+├── public/
+│   └── index.html
+└── src/
+    ├── index.js
+    ├── index.css
+    └── App.js
